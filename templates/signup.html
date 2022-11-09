@@ -3,28 +3,53 @@
 {% block title %} Sign Up {% endblock %}
 
 {% block content %}
-    <div class="container">
+    <div class="container2">
         <form method="post">
             <h1>Sign Up Page</h1>
 
             <!-- Form for signup -->
-            <div class="container">
-                <label for="username">Username</label>
-                <input type="text" class="form-control" name="username" id="username" placeholder="Username"><br>
 
-                <label for="firstname">First name</label>
-                <input type="text" class="form-control" name="firstname" id="firstname" placeholder="First name"><br>
+                <label for="username"><h4>Username</h4></label>
+                <input type="text" 
+                class="form-control" 
+                name="username" 
+                id="username" 
+                placeholder="Username">
+                <br>
 
-                <label for="lastname">Last Name</label>
-                <input type="text" class="form-control" name="lastname" id="lastname" placeholder="Last Name"><br>
+                <label for="firstname"><h4>First name</h4></label>
+                <input type="text" 
+                class="form-control" 
+                name="firstname" 
+                id="firstname" 
+                placeholder="First name">
+                <br>
 
-                <label for="password">Password</label>
-                <input type="text" class="form-control" name="password" id="password" placeholder="Password"><br>
+                <label for="lastname"><h4>Last Name</h4></label>
+                <input type="text" 
+                class="form-control" 
+                name="lastname" 
+                id="lastname" 
+                placeholder="Last Name">
+                <br>
 
-                <label for="confirm">Confirm password</label>
-                <input type="text" class="form-control" name="confirm" id="confirm" placeholder="Confirm password"><br>
+                <label for="password"><h4>Password</h4></label>
+                <input type="text" 
+                class="form-control" 
+                name="password" 
+                id="password" 
+                placeholder="Password"><br>
 
-                <input type="submit" value="Sign Up">
+                <label for="confirm"><h4>Confirm password</h4></label>
+                <input type="text" 
+                class="form-control" 
+                name="confirm" 
+                id="confirm" 
+                placeholder="Confirm password">
+                <br>
+
+                <input type="submit" 
+                value="Sign Up">
 
                 <p>
                     Already have an account? <a href="{{ url_for('login') }}">Log In</a>

@@ -3,19 +3,30 @@
 {% block title %} Log In {% endblock %}
 
 {% block content %}
-    <div class="container">
+    <div class="container1" id="login">
         <form method="post">
             <h1>Log In Page</h1>
 
             <!-- Form for login -->
-            <div class="container">
-                <label for="username">Username</label>
-                <input type="text" class="form-control" name="username" id="username" placeholder="Username"><br>
+            <!-- <div class="container1" id="login"> -->
+                <label for="username"><h4>Username</h4></label>
+                <input type="text" 
+                class="form-control" 
+                name="username" 
+                id="username" 
+                placeholder="Username">
+                <br>
 
-                <label for="password">Password</label>
-                <input type="text" class="form-control" name="password" id="password" placeholder="Password"><br>
+                <label for="password"><h4>Password</h4></label>
+                <input type="text" 
+                class="form-control" 
+                name="password" 
+                id="password" 
+                placeholder="Password">
+                <br>
 
-                <input type="submit" value="Log In">
+                <input type="submit" 
+                value="Log In">
 
                 <p>
                     Don't have an account yet? <a href="{{ url_for('signup') }}">Sign Up</a>
